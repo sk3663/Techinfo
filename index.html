@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TechInfo Pvt. Ltd.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>TechInfo Pvt. Ltd.</h1>
+  <p>IT Consulting & IT Infrastructure Solutions</p>
+</header>
+
+<select id="currency" onchange="changeCurrency()">
+  <option value="INR">INR ₹</option>
+  <option value="USD">USD $</option>
+  <option value="EUR">EUR €</option>
+  <option value="GBP">GBP £</option>
+</select>
+
+<h2>IT Products & Software</h2>
+
+<table>
+<tr><th>Item</th><th>Price</th></tr>
+<tr><td>Windows 11 Pro License</td><td class="price" data-inr="12000">₹12000</td></tr>
+<tr><td>MS Office 365</td><td class="price" data-inr="8000">₹8000</td></tr>
+<tr><td>1TB Hard Drive</td><td class="price" data-inr="4500">₹4500</td></tr>
+<tr><td>512GB SSD</td><td class="price" data-inr="5500">₹5500</td></tr>
+<tr><td>CCTV Camera</td><td class="price" data-inr="3000">₹3000</td></tr>
+<tr><td>Router</td><td class="price" data-inr="4000">₹4000</td></tr>
+<tr><td>Firewall</td><td class="price" data-inr="15000">₹15000</td></tr>
+<tr><td>Server</td><td class="price" data-inr="120000">₹120000</td></tr>
+<tr><td>LAN Cable (per meter)</td><td class="price" data-inr="50">₹50</td></tr>
+</table>
+
+<a href="contact.html">Contact Us</a>
+
+<div id="chatbot">
+  <h3>Chatbot</h3>
+  <input id="chatInput" placeholder="Ask something...">
+  <button onclick="chat()">Send</button>
+  <p id="chatOutput"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
