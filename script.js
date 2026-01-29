@@ -13,7 +13,7 @@ function chat() {
   let q = document.getElementById("chatInput").value.toLowerCase();
   let res = "Please contact support";
   if(q.includes("price")) res="All prices are listed above.";
-  if(q.includes("contact")) res="Email: abc@gmail.com | WhatsApp: 9876543210";
+  if(q.includes("contact")) res="Email: logs.suraj@gmail.com | WhatsApp: +918507486618";
   document.getElementById("chatOutput").innerText = res;
 }
 
@@ -23,3 +23,4 @@ function sendMessage() {
   alert("Message Sent! Admin will be notified.");
   window.open("https://wa.me/919876543210?text=New%20Contact:%20"+name+"%20-"+msg);
 }
+
